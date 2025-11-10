@@ -1,0 +1,124 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1762482733,
+        "narHash": "sha256-g/da4FzvckvbiZT075Sb1/YDNDr+tGQgh4N8i5ceYMg=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e1ebeec86b771e9d387dd02d82ffdc77ac753abc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "redis": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761798869,
+        "narHash": "sha256-L28NwU6uZvjl7mvlsURfBYQrdY+SKsTLkJkBRNIIUkw=",
+        "ref": "refs/heads/rl_8.2",
+        "rev": "06c2a949dea3fd7ded0aa150600ea6315238e298",
+        "revCount": 18736,
+        "type": "git",
+        "url": "ssh://git@github.com/redislabsdev/Redis.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/redislabsdev/Redis.git"
+      }
+    },
+    "redis-flake": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "redis": "redis"
+      },
+      "locked": {
+        "lastModified": 1762772388,
+        "narHash": "sha256-vj9n3xhkQ/Dl7u4foE7MED2PkME2/OrIsgUv6Oq5quk=",
+        "owner": "chesedo",
+        "repo": "redis-flake",
+        "rev": "72f1e26e9dcc584c5ddb42ab783352b0ffba9732",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chesedo",
+        "ref": "zlib",
+        "repo": "redis-flake",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "redis-flake": "redis-flake",
+        "rust-overlay": "rust-overlay"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762742448,
+        "narHash": "sha256-XMxV0h13gg63s0sV6beihCIqdpcJhtbse6DHI743nvo=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "7f3556887e3375dc26ff1601b57c93ee286f2c5e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
