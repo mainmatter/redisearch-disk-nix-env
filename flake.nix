@@ -34,6 +34,8 @@
           default =  pkgs.mkShell {
             hardeningDisable = [ "fortify" "stackprotector" "pic" "relro" ];
             # Shell hooks to create executable scripts in a local bin directory
+
+            CMAKE_ARGS = "-DSVS_SHARED_LIB=OFF";
             shellHook = ''
               cargo_version=$(cargo --version 2>/dev/null)
 
