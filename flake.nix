@@ -83,6 +83,26 @@
               vscode-extensions.vadimcn.vscode-lldb
             ];
           };
+
+          nightly = pkgs.mkShell {
+            hardeningDisable = [ "fortify" "stackprotector" "pic" "relro" ];
+
+            buildInputs = with pkgs; [
+              # Dev dependencies based on developer.md
+              cmake
+              openssl.dev
+              libxcrypt
+
+              (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {
+                extensions = [ "rust-src" "miri" "llvm-tools-preview" ];
+              }))
+            ];
+
+            packages = with pkgs; [
+              cargo-llvm-cov
+              lcov
+            ];
+          };
         };
       });
 }
