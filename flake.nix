@@ -15,7 +15,6 @@
       url = "github:chesedo/redis-flake/big-redis";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      inputs.redis.url = "git+ssh://git@github.com/redislabsdev/Redis.git?ref=rl_big2_8.0";
     };
   };
 
