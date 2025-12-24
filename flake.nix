@@ -80,7 +80,7 @@
               cargo-outdated
               cargo-nextest
               lldb
-              vscode-extensions.vadimcn.vscode-lldb
+              vscode-extensions.vadimcn.vscode-lldb.adapter
             ];
           };
 
