@@ -78,6 +78,7 @@
               rust-analyzer
               cargo-watch
               cargo-outdated
+              cargo-nextest
               lldb
               vscode-extensions.vadimcn.vscode-lldb
             ];
