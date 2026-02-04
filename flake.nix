@@ -344,7 +344,7 @@
                 ];
               }))
 
-              (rust-bin.nightly."2025-07-30".default.override {
+              (rust-bin.nightly."2026-01-05".default.override {
                 extensions = [ "rust-src" "miri" "llvm-tools-preview" ];
               })
 
