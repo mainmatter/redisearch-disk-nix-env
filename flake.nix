@@ -18,7 +18,7 @@
     };
 
     rltest-src = {
-      url = "github:RedisLabsModules/RLTest/v0.7.16";
+      url = "github:RedisLabsModules/RLTest/v0.7.18";
       flake = false;  # Use the source directly, not as a flake
     };
 
@@ -64,7 +64,7 @@
         # Custom RLTest package
         rltest = pkgs.python3Packages.buildPythonPackage rec {
           pname = "RLTest";
-          version = "0.7.16";
+          version = "0.7.18";
 
           src = rltest-src;
 
@@ -217,6 +217,33 @@
           };
         };
 
+        # Custom gherkin-official package since it is not available in nixpkgs
+        gherkin-official = pkgs.python3Packages.buildPythonPackage rec {
+          pname = "gherkin-official";
+          version = "29.0.0";
+
+          src = pkgs.fetchPypi {
+            pname = "gherkin_official";
+            inherit version;
+            hash = "sha256-2+oyVhFY8CKA11edF5sBkWDQcs4IMZdiXi+Apndrues=";
+          };
+
+          pyproject = true;
+          build-system = with pkgs.python3Packages; [ setuptools ];
+        };
+
+        # The nix version is too old and doesn't have the latest features we need, so we override it with a newer version and add the gherkin-official dependency
+        pytest-bdd-8 = pkgs.python3Packages.pytest-bdd.overridePythonAttrs (old: rec {
+          version = "8.1.0";
+          src = pkgs.fetchPypi {
+            pname = "pytest_bdd";
+            inherit version;
+            hash = "sha256-7wiWxc1YgW3EmBDo/x1jL0oSAZ+z5JlZstNJ/8HJv7U=";
+          };
+          dependencies = old.dependencies ++ [ gherkin-official ];
+          doCheck = false;
+        });
+
         # Python environment with packages from requirements.txt
         pythonEnv = pkgs.python3.withPackages (ps: with ps; [
           pip # Needed for readies to detect this python env
@@ -232,6 +259,8 @@
           rltest
           redisbench-admin
           ml-dtypes
+          pytest-bdd-8
+          pytest-xdist
         ]);
       in
       {

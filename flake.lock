@@ -97,11 +97,11 @@
         "speedb": "speedb"
       },
       "locked": {
-        "lastModified": 1773311670,
-        "narHash": "sha256-WwbpKpEB4tkMvsTCRsA2REpVGygwXdwB+OnhiVC2Uk4=",
+        "lastModified": 1773318239,
+        "narHash": "sha256-C5YvvAcRzBRZQgiDLyMn2HbpnXxYvusDF+2Oyl4gaTk=",
         "owner": "chesedo",
         "repo": "redis-flake",
-        "rev": "9df2827c61dd141400f8cd440f879519ea97d7e8",
+        "rev": "b395ec9d29f5bd435943bb9c59d2251b2b685366",
         "type": "github"
       },
       "original": {
@@ -131,16 +131,16 @@
     "rltest-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1743002903,
-        "narHash": "sha256-2oDHUzeQR7o/qVDzswI05FY4R0LWVVAHw67z3ozXVmM=",
+        "lastModified": 1763294468,
+        "narHash": "sha256-QZydZRbZRgRNWr85TpuG7RHlZPvrFhh8F84J7QHrOxc=",
         "owner": "RedisLabsModules",
         "repo": "RLTest",
-        "rev": "b6bc69cfa67aa05aea7c829a133b31e309c210ef",
+        "rev": "d18e03806be856cce47cc2fc73ae78bd2fd4db48",
         "type": "github"
       },
       "original": {
         "owner": "RedisLabsModules",
-        "ref": "v0.7.16",
+        "ref": "v0.7.18",
         "repo": "RLTest",
         "type": "github"
       }
