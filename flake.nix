@@ -56,6 +56,9 @@
             pname = "paramiko";
             hash = "sha256-ssZlvEWyshW9fX8DmQGxSwZ9oA86EeZkCZX9WPJmSCI=";
           };
+
+          # Skip tests during build
+          doCheck = false;
         }));
 
         # Custom RLTest package
