@@ -281,13 +281,17 @@
             '';
 
             buildInputs = with pkgs; [
+              # Dev dependencies based on developer.md
+              openssl.dev
+              libxcrypt
+            ];
+
+            packages = with pkgs; [
               # For LSP
               ccls
 
               # Dev dependencies based on developer.md
               cmake
-              openssl.dev
-              libxcrypt
 
               # For search on disk
               redis-source
@@ -312,17 +316,15 @@
               wget
               redis-source
 
-              rust-bin.stable.latest.default
-
               # For redisbench-admin
               ftsb
               memtier-benchmark
 
               # Cache for faster rebuilds
               sccache
-            ];
 
-            packages = with pkgs; [
+              # Rust toolchain and extensions
+              rust-bin.stable.latest.default
               rust-analyzer
               cargo-watch
               cargo-outdated
@@ -360,9 +362,13 @@
 
             buildInputs = with pkgs; [
               # Dev dependencies based on developer.md
-              cmake
               openssl.dev
               libxcrypt
+            ];
+
+            packages = with pkgs; [
+              # Dev dependencies based on developer.md
+              cmake
 
               # Python environment for integration tests
               pythonEnv
@@ -377,15 +383,13 @@
                 ];
               }))
 
+              # To resolve ASAN symbols
+              llvmPackages.bintools
+
+              # Rust toolchain and extensions
               (rust-bin.nightly."2026-01-05".default.override {
                 extensions = [ "rust-src" "miri" "llvm-tools-preview" ];
               })
-
-              # To resolve ASAN symbols
-              llvmPackages.bintools
-            ];
-
-            packages = with pkgs; [
               cargo-llvm-cov
               cargo-nextest
               lcov
