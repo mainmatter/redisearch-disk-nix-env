@@ -97,15 +97,15 @@
         "speedb": "speedb"
       },
       "locked": {
-        "lastModified": 1773318239,
-        "narHash": "sha256-C5YvvAcRzBRZQgiDLyMn2HbpnXxYvusDF+2Oyl4gaTk=",
-        "owner": "chesedo",
+        "lastModified": 1773729516,
+        "narHash": "sha256-uuOE6lcIDVPZuJ631SPA3zYjWpQuftHdP7HKBcdkqmA=",
+        "owner": "mainmatter",
         "repo": "redis-flake",
-        "rev": "b395ec9d29f5bd435943bb9c59d2251b2b685366",
+        "rev": "c286374ff01bd3257b342d7e263ac27ac2b7ea85",
         "type": "github"
       },
       "original": {
-        "owner": "chesedo",
+        "owner": "mainmatter",
         "ref": "rsd_big2_8.4",
         "repo": "redis-flake",
         "type": "github"
