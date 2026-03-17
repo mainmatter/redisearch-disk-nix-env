@@ -294,6 +294,17 @@
               boost188
               liburing
 
+              # To profile the code or benchmarks
+              samply
+              perf
+              parca
+              parca-agent
+
+              # For valgrind
+              valgrind
+              kdePackages.kcachegrind
+              cargo-valgrind
+
               # Python environment for integration tests
               pythonEnv
 
