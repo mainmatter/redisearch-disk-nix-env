@@ -37,11 +37,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1773201692,
-        "narHash": "sha256-NXrKzNMniu4Oam2kAFvqJ3GB2kAvlAFIriTAheaY8hw=",
+        "lastModified": 1777425547,
+        "narHash": "sha256-d57AbflkNfZNoFaZDzssEq1RfPoM9dLtOGI2O+N/68Q=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "b6067cc0127d4db9c26c79e4de0513e58d0c40c9",
+        "rev": "ebc08544afa77957cc348ba72dc490ec73b87f68",
         "type": "github"
       },
       "original": {
@@ -71,16 +71,16 @@
     "redis": {
       "flake": false,
       "locked": {
-        "lastModified": 1773854570,
-        "narHash": "sha256-avx3yn5uPtACdm8WAM1Pt1TfL54JB9lHUp5FbnDlmZs=",
-        "ref": "rse_big2_8.6",
-        "rev": "6ecb8d6d5e15750a1e0d57f6e8e9279cf70a7f2a",
-        "revCount": 20633,
+        "lastModified": 1777477045,
+        "narHash": "sha256-uYLYnH42i+6JsXFAkoARweFXqPix0Y3sqPlX4ZeUCDo=",
+        "ref": "rl_big2_8.6",
+        "rev": "c9c5c8960afc2a12ecdae82af75e5401714eeeaf",
+        "revCount": 20719,
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/Redis.git"
       },
       "original": {
-        "ref": "rse_big2_8.6",
+        "ref": "rl_big2_8.6",
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/Redis.git"
       }
@@ -97,16 +97,16 @@
         "speedb": "speedb"
       },
       "locked": {
-        "lastModified": 1774253186,
-        "narHash": "sha256-YaCugv8krgCmIH1eqkdcZWx+ezhqE17GQHPv7MMr6uU=",
+        "lastModified": 1777557850,
+        "narHash": "sha256-/IGFNuNET/CAqOsJVvO5loid8Zj4PbbB4XKp3Tq5fhU=",
         "owner": "mainmatter",
         "repo": "redis-flake",
-        "rev": "50c03db49fabdef00b26d61146af011f0f89cf19",
+        "rev": "126173204cc9c9f429e30853182785f0703ed688",
         "type": "github"
       },
       "original": {
         "owner": "mainmatter",
-        "ref": "rse_big2_8.6",
+        "ref": "rl_big2_8.6",
         "repo": "redis-flake",
         "type": "github"
       }
@@ -114,11 +114,11 @@
     "redisbench-admin-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1771412018,
-        "narHash": "sha256-rhw6csPxmc5yDz3BEYgBtLVbsubj5/yM5g4Ky5hFB6I=",
+        "lastModified": 1777544187,
+        "narHash": "sha256-vd2/NxwOSQ4PGJi7AEYC7N54Ow3ufcjy6tND/iFb3BE=",
         "owner": "redis-performance",
         "repo": "redisbench-admin",
-        "rev": "3b0c4e4b040b5a870aed27f4708242c626cc87dd",
+        "rev": "f6b369f56461adbcfc993ea373f13415f5f464d4",
         "type": "github"
       },
       "original": {
@@ -163,11 +163,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1773284828,
-        "narHash": "sha256-0qI+a9z7KpYCBbp4ENN32b2tf0VmC3MhgFw1KAroqxQ=",
+        "lastModified": 1777519017,
+        "narHash": "sha256-TXilQ8MwFFtZs7HSogSI/LJzAS63nicE8iF63iB93WM=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "2b18fe48d9a8a4ff3850d56b67cfe72f2a589237",
+        "rev": "09b556f18dacc39e97a46e0a1cba47af7b3af1d8",
         "type": "github"
       },
       "original": {
@@ -179,16 +179,16 @@
     "speedb": {
       "flake": false,
       "locked": {
-        "lastModified": 1773767323,
-        "narHash": "sha256-XiY2iUX1RLpI4ZAPZuBL4e75CIC+n+bdktY19SvyOJc=",
+        "lastModified": 1774827142,
+        "narHash": "sha256-rQA0LAbY0Gwb5RWT51OexE/C6rlhp9DITCotrbxdz8Y=",
         "ref": "refs/heads/main",
-        "rev": "d52df54a12b45116e42163fc0f4e95ccf535ee41",
-        "revCount": 12259,
+        "rev": "3cc94f283eedccfb203d3c48af65a057dca15799",
+        "revCount": 12261,
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/speedb-ent"
       },
       "original": {
-        "rev": "d52df54a12b45116e42163fc0f4e95ccf535ee41",
+        "rev": "3cc94f283eedccfb203d3c48af65a057dca15799",
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/speedb-ent"
       }
