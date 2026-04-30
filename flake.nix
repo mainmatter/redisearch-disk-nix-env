@@ -265,6 +265,9 @@
               echo -e "\033[1;36m=== 🦀 Welcome to the RediSearch development environment ===\033[0m"
               echo -e "\033[1;33m• $cargo_version\033[0m"
 
+              export CC="${pkgs.llvmPackages.clang}/bin/clang"
+              export CXX="${pkgs.llvmPackages.clang}/bin/clang++"
+
               # For libclang dependency to work
               export LIBCLANG_PATH="${pkgs.llvmPackages.libclang.lib}/lib"
               # For `sys/types.h` and `stddef.h` required by redismodules-rs
@@ -290,6 +293,8 @@
               # For LSP
               ccls
 
+              llvmPackages.clang
+
               # Dev dependencies based on developer.md
               cmake
 
@@ -297,6 +302,7 @@
               redis-source
               boost188
               liburing
+              pkg-config
 
               # To profile the code or benchmarks
               samply
