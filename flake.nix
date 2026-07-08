@@ -345,8 +345,9 @@
               # Force SVS to build from source instead of using precompiled library
               export CMAKE_ARGS="-DSVS_SHARED_LIB=OFF"
 
-              # Tell getpy3 to use our Nix Python directly, skipping version detection and PEP_668 logic
-              export MYPY="${pkgs.python3}/bin/python3"
+              # Tell getpy3 to use our Nix Python directly, skipping version detection and PEP_668 logic.
+              # Must point at pythonEnv (which bundles pip) — getpy3's CHECK mode runs `$MYPY -m pip --version`.
+              export MYPY="${pythonEnv}/bin/python3"
 
               # Needed to build speedb from source
               export NIX_CFLAGS_COMPILE="-Wno-error=format-truncation $NIX_CFLAGS_COMPILE"
@@ -429,8 +430,9 @@
               # For `sys/types.h` and `stddef.h` required by redismodules-rs
               export BINDGEN_EXTRA_CLANG_ARGS="-I${pkgs.glibc.dev}/include -I${pkgs.gcc-unwrapped}/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include"
 
-              # Tell getpy3 to use our Nix Python directly, skipping version detection and PEP_668 logic
-              export MYPY="${pkgs.python3}/bin/python3"
+              # Tell getpy3 to use our Nix Python directly, skipping version detection and PEP_668 logic.
+              # Must point at pythonEnv (which bundles pip) — getpy3's CHECK mode runs `$MYPY -m pip --version`.
+              export MYPY="${pythonEnv}/bin/python3"
 
               # Tell valgrind about the suppression file
               export VALGRINDFLAGS="--suppressions=$PWD/valgrind.supp"
