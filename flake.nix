@@ -378,6 +378,7 @@
               boost188
               liburing
               pkg-config
+              gflags # speedb
 
               # To profile the code or benchmarks
               samply
