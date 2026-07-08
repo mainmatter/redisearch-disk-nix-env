@@ -319,6 +319,7 @@
           ml-dtypes
           pytest-bdd-8
           pytest-xdist
+          pytest-timeout
         ]);
       in
       {
