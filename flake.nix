@@ -50,6 +50,10 @@
           inherit system;
           overlays = [ (import rust-overlay) ];
           config.allowUnfree = true;
+          # parca-ui's pnpmDeps lockfile is pinned to pnpm 9.15.9. pnpm only
+          # runs inside the Nix build sandbox against an already-resolved
+          # lockfile, so the CVEs don't reach the built artefacts or the shell.
+          config.permittedInsecurePackages = [ "pnpm-9.15.9" ];
         };
         redis-source = redis-flake.packages.${system}.redis;
 

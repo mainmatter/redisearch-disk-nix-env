@@ -54,11 +54,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1777425547,
-        "narHash": "sha256-d57AbflkNfZNoFaZDzssEq1RfPoM9dLtOGI2O+N/68Q=",
+        "lastModified": 1783279667,
+        "narHash": "sha256-/NAkDSsve+GNM0Bt6tleJdCGfsTlK89nPjkVOzZMo0s=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ebc08544afa77957cc348ba72dc490ec73b87f68",
+        "rev": "f205b5574fd0cb7da5b702a2da51507b7f4fdd1b",
         "type": "github"
       },
       "original": {
@@ -88,11 +88,11 @@
     "redis": {
       "flake": false,
       "locked": {
-        "lastModified": 1777477045,
-        "narHash": "sha256-uYLYnH42i+6JsXFAkoARweFXqPix0Y3sqPlX4ZeUCDo=",
+        "lastModified": 1782996638,
+        "narHash": "sha256-2HU2OS6oAQrZ2cFfzxK2qw3AtUVITqVQq2kishtps8g=",
         "ref": "rl_big2_8.6",
-        "rev": "c9c5c8960afc2a12ecdae82af75e5401714eeeaf",
-        "revCount": 20719,
+        "rev": "2f465acaee2b01375406497505d3d57b15a59a51",
+        "revCount": 20741,
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/Redis.git"
       },
@@ -114,11 +114,11 @@
         "speedb": "speedb"
       },
       "locked": {
-        "lastModified": 1777557850,
-        "narHash": "sha256-/IGFNuNET/CAqOsJVvO5loid8Zj4PbbB4XKp3Tq5fhU=",
+        "lastModified": 1783494244,
+        "narHash": "sha256-qrEw7IlC1Ornjqxr4Z1SRR/gZKl9MJiiMsQUFgdj5HY=",
         "owner": "mainmatter",
         "repo": "redis-flake",
-        "rev": "126173204cc9c9f429e30853182785f0703ed688",
+        "rev": "14e99c3524b1ae1d5f4d171e98b23f97d611fc8b",
         "type": "github"
       },
       "original": {
@@ -131,11 +131,11 @@
     "redisbench-admin-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1777544187,
-        "narHash": "sha256-vd2/NxwOSQ4PGJi7AEYC7N54Ow3ufcjy6tND/iFb3BE=",
+        "lastModified": 1780323925,
+        "narHash": "sha256-eKwieXDwgo8Cf8q/qHTqXIQJlVjZ141QcTbYxyJF9CM=",
         "owner": "redis-performance",
         "repo": "redisbench-admin",
-        "rev": "f6b369f56461adbcfc993ea373f13415f5f464d4",
+        "rev": "aca22be7ee22a2178c58f01c8c63b51113b9e280",
         "type": "github"
       },
       "original": {
@@ -181,11 +181,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1782875958,
-        "narHash": "sha256-5eqDcnBjb1424HRQdnhuhNOBZguq1Z2tqSa2OMF/m2c=",
+        "lastModified": 1783488441,
+        "narHash": "sha256-jmWf+H3iC/0z7/mmvTovaJx1E/LME1QyHkyk+AFfJPk=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "13139aefa973f3d96c60c0fbab801de058ae25ca",
+        "rev": "7dc3a177a239ed879c5581a80f6dc246c7e102f1",
         "type": "github"
       },
       "original": {
