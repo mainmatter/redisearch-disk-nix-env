@@ -12,7 +12,7 @@
     };
 
     redis-flake = {
-      url = "github:mainmatter/redis-flake/rl_big2_8.6";
+      url = "github:mainmatter/redis-flake/rl_big2_beta";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
